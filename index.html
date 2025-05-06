@@ -6,13 +6,27 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1505666283282-ead26b8c0f6e');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .content {
       text-align: center;
-      padding: 50px;
-      background-color: #f2f2f2;
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
     }
-    h1 {
-      color: #333;
+
+    h1, h2 {
+      color: #fff;
     }
+
     .button {
       display: inline-block;
       margin: 20px;
@@ -26,18 +40,47 @@
       transition: background-color 0.3s ease;
       text-decoration: none;
     }
+
     .button:hover {
       background-color: #004999;
+    }
+
+    .section {
+      margin-top: 100px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+      border-radius: 10px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
 
-  <h1>Learn About Thales of Miletus</h1>
+  <div class="content">
+    <h1>Learn About Thales of Miletus</h1>
 
-  <a class="button" href="#who">Who Was He?</a>
-  <a class="button" href="#accomplishments">What Were His Accomplishments?</a>
-  <a class="button" href="3d-model.html">3D Model</a>
+    <a class="button" href="#who">Who Was He?</a>
+    <a class="button" href="#accomplishments">What Were His Accomplishments?</a>
+    <a class="button" href="3d-model.html">3D Model</a>
+
+    <div id="who" class="section">
+      <h2>Who Was Thales?</h2>
+      <p>Thales of Miletus was a pre-Socratic Greek philosopher, mathematician, and astronomer from Ionia. He is considered the first philosopher in Western history and one of the Seven Sages of Greece. He lived around 624–546 BCE.</p>
+    </div>
+
+    <div id="accomplishments" class="section">
+      <h2>What Were His Accomplishments?</h2>
+      <ul>
+        <li>Predicted a solar eclipse in 585 BCE.</li>
+        <li>Introduced geometry to the Greeks from Egypt.</li>
+        <li>Believed water was the fundamental substance of the universe.</li>
+        <li>Used natural explanations instead of mythological ones for events.</li>
+      </ul>
+    </div>
+  </div>
 
 </body>
 </html>
